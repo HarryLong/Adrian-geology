@@ -1,0 +1,5 @@
+- Thumbnail picture and full screen picture must be different --> OK
+- Background of full screen picture transparent-ish --> OK
+- Title in main menu == page name
+- Full screen picture only on the left hand side of the page. The main menu must remain present at all times. --> OK
+- The thumbnails should remain present when in full screen mode. Click anywhere but a thumbnail -> Exit full screen mode. Click a thumbnail -> full screen that pic --> OK
