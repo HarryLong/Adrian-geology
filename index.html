@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Adrians Geology Project</title>
+	<style>
+	body{
+		background-image: url('data/mclarenp1.jpg');
+      	background-repeat: no-repeat;
+      	background-size: contain; 
+      	background-position:center;
+      	background-color: black;
+	}
+	#title{
+		height:5%;
+		text-align: center;
+		font-weight: bold;
+		color: red;
+		padding-bottom: 5px;
+	}
+	#main_page{
+		border-top: 2px solid red;
+		height:90%;
+	}
+	#footer {
+		width:100%;
+		position:absolute;
+		bottom:0;
+		left:0;
+		text-align: right;
+		font-weight: bold;
+		color: white;
+	}
+	#west_layer_container{
+		float:left;
+		width: 50%;
+		height: 100%;
+	}
+	#east_layer_container{
+		float:right;
+		width: 50%;
+		height: 100%;
+	}
+	.fill_container{
+		width: 100%;
+		height: 100%;
+	}
+    .pointer_on_hover
+    {
+      cursor: pointer;
+    }
+	</style>
+	</head>
+
+	<body>
+		<div id='title'> <h1>TITLE</h1> </div>
+		<div id='main_page'>
+			<div id='west_layer_container'> 
+				<div id='west_layer' class='pointer_on_hover fill_container' onclick="location.href='westpage.php'" onmouseover="highlightBorders('west_layer')" onmouseout="removeBorders('west_layer')"> </div>
+			</div>
+			<div id='east_layer_container'> 
+				<div id='east_layer' class='pointer_on_hover fill_container' onclick="location.href='eastpage.php'" onmouseover="highlightBorders('east_layer')" onmouseout="removeBorders('east_layer')"> </div>
+			</div> 
+		</div>
+		<div id='footer'>Developed by Harry Long</div>
+	</body>
+	<script type="text/javascript">
+	function highlightBorders(id)
+	{
+		document.getElementById(id).style.border="3px solid";
+	}
+	function removeBorders(id)
+	{
+		document.getElementById(id).style.border="3px hidden";
+	}
+	</script>
+	</html>
